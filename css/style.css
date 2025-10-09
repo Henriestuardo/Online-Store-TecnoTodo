@@ -1,0 +1,219 @@
+/*====================PRODUCTOS====================*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para la sección de productos */
+#productos {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 120px auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+#computadoras {
+    background-color: #00a9e0;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: white;
+}
+
+/* Contenedor de productos */
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex: 1 1 calc(25% - 30px);
+}
+
+/* Efecto de hover en las tarjetas */
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de productos */
+.producto img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Botón de añadir al carrito */
+.producto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el contenedor de productos usando Flexbox */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+/*====================FIN DE PRODUCTOS====================*/
+
+
+/*==================== BARRA DE NAVEGACIÓN ====================*/
+.search-box input {
+    border-radius: 0;
+}
+.search-box button {
+    border-radius: 0;
+    background-color: #00a9e0;
+    border: none;
+}
+.search-box button i {
+  color: #fff;
+}
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff3d00;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header img {
+    height: 100px;
+}
+
+.header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+/*==================== FIN DE NAVEGACIÓN ====================*/
+
+
+/*====================FOOTER====================*/
+/* Estilos para el footer */
+footer {
+    background-color: #00a9e0;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-wrap strong {
+    font-size: 18px;
+}
+
+.footer-wrap small {
+    font-size: 14px;
+    opacity: 0.85;
+}
+/*====================FIN====================*/
+
+/*=================MENÚ HAMBURGUESA====================*/
+/*Menu nvegación*/
+.nav-menu{
+    margin-left: 35px; 
+    z-index: 9999;
+}
+
+/* Menú de navegación lista*/
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Links*/
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+/*Botón hamburguesa*/
+.hamburger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Responsibidad*/
+@media screen and (max-width: 768px) 
+{
+    /*Menú de navegación*/
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #000000e1;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+ 
+    /*Menú navegación lista*/
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /*Boton*/
+    .hamburger {
+        display: block;
+    }
+
+    /*Presentación del menú*/
+    .nav-menu.show {
+        display: flex;
+    }
+}
+/*==========================================*/
