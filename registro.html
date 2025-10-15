@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="registro-container">
+        <h1>Crear Cuenta</h1>
+        <form action="procesar_registro.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" required minlength="3" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required minlength="5">
+                <button id="ver_contra" type="button" class="toggle-password" onclick="togglePassword('password')">👀</button>
+            </div>
+
+            <button type="submit" class="btn">Registrarse</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword(id) {
+            const input = document.getElementById(id);
+            if (input.type === 'password') {
+                input.type = 'text';
+            } else {
+            input.type = 'password';
+            }
+        }
+    </script>
+
+</body>
+</html>

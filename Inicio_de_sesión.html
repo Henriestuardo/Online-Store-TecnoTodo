@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INICIO DE SESIÓN</title>
+    <link rel="stylesheet" href="Inicio_de_sesión.css">
+</head>
+<body>
+    <div id="login-container">
+            <img src="Imagenes/logo.png" alt="Logo de la empresa" class="logo">
+    <H1>INICIO DE SESIÓN</H1>
+        <form action="procesar_login.js" method="post">
+
+            <input type="text" id="username" name="username" required placeholder="Usuario"><br><br>
+
+            <input type="password" id="password" name="password" required placeholder="Contraseña"><br><br>
+
+            <input id="IniciarSesion" type="submit" value="Iniciar Sesión">
+            <input id="Registrarse" type="submit" value="Registrate aquí" onclick="window.location.href='registro.html'; return false;">
+
+            <button id="ver_contra" type="button" class="toggle-password" onclick="togglePassword('password')">👀</button>
+            
+            </div>
+        </form>
+    </div>
+
+    <script src="procesar_login.js"></script>
+</body>
+</html>
