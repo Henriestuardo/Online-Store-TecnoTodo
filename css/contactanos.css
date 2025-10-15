@@ -1,0 +1,132 @@
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.contact-section h3 {
+    color: #555;
+    margin: 25px 0 15px 0;
+}
+
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 2px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Mapa */
+.map-container {
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sistema de estrellas */
+.rating-section {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.star-rating {
+    display: inline-block;
+    direction: rtl;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin: 0 2px;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+/* Formulario de comentarios */
+.comment-section {
+    margin-top: 30px;
+}
+
+.comment-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.submit-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #2E7D32;
+}
