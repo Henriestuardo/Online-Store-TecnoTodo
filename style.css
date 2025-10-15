@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 150%;
+  max-width: 1000px;
+  padding: 70px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.checkout {
+  display: flex;
+  gap: 20px;
+}
+
+.envio {
+  flex: 2;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.envio h2 {
+  margin-bottom: 10px;
+}
+
+.login-box {
+  border: 1px solid #999;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+}
+
+.login-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.phone {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.phone .code {
+  background: #ddd;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pago {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.cancelar {
+  background: #ccc;
+}
+
+.resumen {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.resumen h2 {
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  background: #e0e0e0;
+  border: 1px solid #aaa;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.qty button {
+  background: #ddd;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.totales {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.metodos {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.metodos img {
+  width: 40px;
+  height: auto;
+}
+
+img {
+  width: 100px;   
+  height: 20px;   
+}
+img {
+  transform: scale(0.5);
+}
+.pequena {
+  width: 50px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+}
