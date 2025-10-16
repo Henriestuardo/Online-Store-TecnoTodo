@@ -1,0 +1,9 @@
+# Archivos de entorno
+.env
+
+# Archivos creados por el sistema 
+Thumbs.db
+
+#archivos creados por el editor de texto o IDE, innecesarios en el código
+.vscode/
+.idea/

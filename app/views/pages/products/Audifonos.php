@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -154,4 +154,50 @@
 
 <script src="JS/menu.js"></script>
 
-</html>
+</html> -->
+
+<?php
+// app/views/pages/products/audifonos.php
+
+// Incluir conexión a la base de datos (¡CORREGIDO!)
+require_once __DIR__ . '/../../app/config/database.php';
+
+// Supón que la categoría "Audífonos" tiene id = 2
+$id_categoria = 2;
+
+// Consulta segura con PDO
+$stmt = $pdo->prepare("
+    SELECT id_producto, nombre, descripcion, precio, imagen_principal 
+    FROM productos 
+    WHERE id_categoria = ? AND activo = TRUE
+");
+$stmt->execute([$id_categoria]);
+$productos = $stmt->fetchAll();
+
+// Preparar contenido para la plantilla
+ob_start();
+?>
+<h1>Audífonos</h1>
+<section id="productos">
+    <?php if (empty($productos)): ?>
+        <p>No hay audífonos disponibles en este momento.</p>
+    <?php else: ?>
+        <?php foreach ($productos as $p): ?>
+        <div class="producto">
+            <img src="/img/Audifonos/<?= htmlspecialchars($p['imagen_principal']) ?>" 
+                 alt="<?= htmlspecialchars($p['nombre']) ?>">
+            <h3><?= htmlspecialchars($p['nombre']) ?></h3>
+            <p><?= htmlspecialchars($p['descripcion']) ?></p>
+            <p>Precio: Q<?= number_format($p['precio'], 2) ?></p>
+            <button>Añadir al carrito</button>
+        </div>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</section>
+<?php
+$content = ob_get_clean();
+$title = 'Audífonos - TecnoTodo';
+
+// Cargar plantilla
+include __DIR__ . '/../../layouts/main.php';
+?>
