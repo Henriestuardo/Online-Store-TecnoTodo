@@ -1,17 +1,16 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoTodo - Tienda en Línea</title>
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="/public/css/auth/home.css">
+    <link rel="stylesheet" href="/public/css/auth/products.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
     <header>
-
-        <!-- Botón  -->
         <button class="hamburger" aria-label="Abrir menú" onclick="toggleMenu()">
             &#9776;
         </button>
@@ -154,9 +153,9 @@
 
 <script src="JS/menu.js"></script>
 
-</html> -->
+</html>
 
-<?php
+<!-- <?php
 // app/views/pages/products/audifonos.php
 
 // Incluir conexión a la base de datos (¡CORREGIDO!)
@@ -200,4 +199,4 @@ $title = 'Audífonos - TecnoTodo';
 
 // Cargar plantilla
 include __DIR__ . '/../../layouts/main.php';
-?>
+?> -->

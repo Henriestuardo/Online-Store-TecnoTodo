@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrusel Automático</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/auth/home.css"/>
 </head>
 <body>
     <header class="border-bottom py-2">
@@ -69,13 +70,13 @@
         <div class="menu">
             <ul class="menu-list">
                 <li>
-                    <a href="Computadoras.php" class="category-link active">
+                    <a href="/app/views/pages/products/Computadoras.php" class="category-link active">
                         <img src="img/img-inicio/image copy 5.png" alt="Mouse" class="category-icon" />
                         <span style="color: #ffffff;">Computadoras</span>
                     </a>
                 </li>
                 <li>
-                    <a href="Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 6.png"
                             alt="Icono de Electrodomésticos"
@@ -87,7 +88,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 7.png"
                             alt="Icono de Electrodomésticos"
@@ -99,7 +100,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 8.png"
                             alt="Icono de Electrodomésticos"
@@ -111,7 +112,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 9.png"
                             alt="Icono de Electrodomésticos"
@@ -123,7 +124,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 10.png"
                             alt="Icono de Electrodomésticos"
@@ -135,7 +136,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 11.png"
                             alt="Icono de Electrodomésticos"
@@ -389,7 +390,9 @@
         <a href="Contactanos.php"><p>Contactános</p></a>
 
     </footer>
-    
+
+    <script src="/public/js/carritocompras.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
