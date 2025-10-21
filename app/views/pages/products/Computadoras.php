@@ -6,7 +6,10 @@
     <title>TecnoTodo - Tienda en Línea</title>
     <link rel="stylesheet" href="/public/css/auth/home.css">
     <link rel="stylesheet" href="/public/css/auth/products.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/auth/home.css" />
+    <link rel="stylesheet" href="/public/css/carrito.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -53,17 +56,23 @@
                     </i>
                     Iniciar sesión
                 </a>
-                <div class="position-relative">
-                    <a href="#" class="text-decoration-none text-dark">
+              <div class="position-relative">
+                    <a href="#" class="text-decoration-none text-dark" id="btnAbrirCarrito">
                         <i class="bi bi-cart">
-                            Mi carrito
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            Mi carrito 
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                class="bi bi-cart"
+                                viewBox="0 0 16 16" >
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6h7.22l1.25-6H3.14z"/>
                                 <path d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
                             </svg>
                         </i>
                     </a>
-                    <span class="cart-badge">0</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
                 </div>
             </div>
         </div>
@@ -138,7 +147,39 @@
             </div>
         </section>
     </main>
+       <div class="modal-carrito" id="modalCarrito">
+        <div class="modal-carrito__container">
+            <button type="button" class="modal-carrito__close fa-solid fa-xmark" id="btnCerrarCarrito"></button>
 
+            <div class="modal-carrito__info">
+                <div class="modal-carrito__header">
+                    <h2><i class="fa-brands fa-opencart"></i>Carrito de Compras</h2>
+                </div>
+
+                <div class="modal-carrito__body" id="carritoItems">
+                    <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+                    <div class="empty-cart-message" id="emptyCartMessage">
+                        Tu carrito está vacío
+                    </div>
+                </div>
+
+                <div class="modal-carrito__footer">
+                    <div class="modal-carrito__list-price">
+                        <ul>
+                            <li>Subtotal: <strong id="subtotalCarrito">Q.0.00</strong></li>
+                            <li>Envío: <strong>Q.0.00</strong></li>
+                        </ul>
+                        <h4 class="modal-carrito__total-cart" id="totalCarrito">Total: Q.0.00</h4>
+                    </div>
+
+                    <div class="modal-carrito__btns">
+                        <a href="carritocompras.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
+                        <a href="#" class="btn-carrito btn-carrito-primary">Comprar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-wrap">
             <strong>Tienda en Línea</strong>
@@ -152,7 +193,7 @@
         </div>
     </footer>
 </body>
-
 <script src="JS/menu.js"></script>
-
+<script src="/public/js/carritocompras.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

@@ -66,7 +66,7 @@
         <div class="menu">
             <ul class="menu-list">
                 <li>
-                    <a href="Computadoras.php" class="category-link active">
+                    <a href="/app/views/pages/products/Computadoras.php" class="category-link active">
                         <img src="img/img-inicio/image copy 5.png" alt="Mouse" class="category-icon" />
                         <span style="color: #ffffff;">Computadoras</span>
                     </a>
