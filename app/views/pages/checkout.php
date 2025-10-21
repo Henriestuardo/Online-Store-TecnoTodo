@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proceso de Pago | TecnoTodo</title>
   <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="icon" href="/public/img/brand/logo2.png">
 </head>
 <body>
   <div class="container">
@@ -47,7 +48,7 @@
 
           <div class="btn-group">
             <button type="submit" class="pago">Realizar Pago</button>
-            <button type="button" class="cancelar">Cancelar Pago</button>
+            <a href="/public/Index.php"> <button type="button" class="cancelar">Cancelar Pago</button> </a>
           </div>
         </form>
       </section>

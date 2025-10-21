@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/public/css/auth/home.css" />
     <link rel="stylesheet" href="/public/css/carrito.css">
+    <link rel="icon" href="/public/img/brand/logo2.png">
 </head>
 <body>
     <header class="border-bottom py-2">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <!-- Logo -->
             <div class="header">
-                <img src="img/img-inicio/Tecno.png" alt="Logo TecnoTodo"/>
-                <h1>TecnoTodo</h1>
+                <img src="/public/img/brand/Tecno2 - copia.png" alt="Logo TecnoTodo"/>
+                <p>Más que tecnología, soluciones inteligentes.</p>  
             </div>
             
             <!-- Buscador -->
@@ -72,7 +73,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 6.png"
                             alt="Icono de Electrodomésticos"
@@ -84,7 +85,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 7.png"
                             alt="Icono de Electrodomésticos"
@@ -96,7 +97,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 8.png"
                             alt="Icono de Electrodomésticos"
@@ -108,7 +109,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 9.png"
                             alt="Icono de Electrodomésticos"
@@ -120,7 +121,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 10.png"
                             alt="Icono de Electrodomésticos"
@@ -132,7 +133,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="/app/views/pages/products/Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 11.png"
                             alt="Icono de Electrodomésticos"
@@ -260,7 +261,7 @@
                     </div>
 
                     <div class="modal-carrito__btns">
-                        <a href="carritocompras.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
+                        <a href="/app/views/pages/checkout.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
                         <a href="#" class="btn-carrito btn-carrito-primary">Comprar Ahora</a>
                     </div>
                 </div>
@@ -279,7 +280,7 @@
             </small>
         </div>
 
-        <a href="Contactanos.php"><p>Contactános</p></a>
+        <a href="/app/views/pages/contact.php"><p>Contactános</p></a>
     </footer>
 
     <script src="/public/js/carritocompras.js"></script>

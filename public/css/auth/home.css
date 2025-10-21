@@ -83,14 +83,21 @@
 }
 
 .header img {
-  height: 100px;
+  height: 50px;
 }
+
+p {
+    margin-top: 5px; /* Ajusta este valor según necesites */
+    margin-bottom: 5px; /* Ajusta este valor según necesites */
+  }
 
 .header h1 {
   font-family: Arial, sans-serif;
-  font-size: 28px;
-  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
 }
+
 /* Estilos para el contenedor del menú */
   .menu {
   background-color: #0a92a4;

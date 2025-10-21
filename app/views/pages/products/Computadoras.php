@@ -6,7 +6,7 @@
     <title>TecnoTodo - Tienda en Línea</title>
     <link rel="stylesheet" href="/public/css/auth/home.css">
     <link rel="stylesheet" href="/public/css/auth/products.css"/>
-    
+    <link rel="icon" href="/public/img/brand/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/public/css/auth/home.css" />
     <link rel="stylesheet" href="/public/css/carrito.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -14,26 +14,10 @@
 <body>
 
     <header>
-
-        <!-- Botón  -->
-        <button class="hamburger" aria-label="Abrir menú" onclick="toggleMenu()">
-            &#9776;
-        </button>
-
-        <!--Navegación-->
-        <nav id="menu" class="nav-menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="turismo.html">Turismo</a></li>
-                <li><a href="celebraciones.html">Celebraciones</a></li>
-                <li><a href="contacto.html">Contactános</a></li>
-            </ul> 
-        </nav>
-
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <!-- Logo -->
             <div class="header">
-                <a href="Index.php"><img src="img/img-inicio/Tecno.png" alt="Logo TecnoTodo" /></a>
+                <a href="/public/Index.php"><img src="/public/img/brand/logo.png" alt="Logo TecnoTodo" /></a>
                 <h1>TecnoTodo</h1>
             </div>
             <!-- Buscador -->
@@ -87,7 +71,7 @@
                 <h3>Legion 5 Pro</h3>
                 <p>Laptop de juego Legion 5 Pro.</p>
                 <p>Precio: Q15,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 1" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Legion 5 Pro.jpg">Añadir al carrito</button>
             </div> 
 
             <div class="producto">
@@ -95,7 +79,7 @@
                 <h3>Omen 15</h3>
                 <p>Laptop de juego Omen 15.</p>
                 <p>Precio: Q13,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 2" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Omen 15.jpg">Añadir al carrito</button>
             </div>
     
             <div class="producto">
@@ -103,7 +87,7 @@
                 <h3>Zephyrus G14</h3>
                 <p>Laptop de juego ROG Zephyrus G14.</p>
                 <p>Precio: Q14,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 3" data-precio="8500" data-imagen="img/Laptops/Laptop de juego ROG Zephyrus G14.jpg">Añadir al carrito</button>            
             </div>
 
             <div class="producto">
@@ -111,7 +95,7 @@
                 <h3>MacBook Air M1</h3>
                 <p>Laptop MacBook Air M1.</p>
                 <p>Precio: Q18,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 4" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Legion 5 Pro.jpg">Añadir al carrito</button>
             </div>
              
             <div class="producto">
@@ -119,7 +103,7 @@
                 <h3>Blade 15 Advanced</h3>
                 <p>Laptop de juego Blade 15 Advanced.</p>
                 <p>Precio: Q25,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 5" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Blade 15 Advanced.jpg">Añadir al carrito</button>
             </div> 
 
             <div class="producto">
@@ -127,7 +111,7 @@
                 <h3>XPS 13</h3>
                 <p>Laptop XPS 13.</p>
                 <p>Precio: Q16,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 6" data-precio="8500" data-imagen="img/Laptops/Laptop XPS 13.jpg">Añadir al carrito</button>
             </div>
     
             <div class="producto">
@@ -135,7 +119,7 @@
                 <h3>VivoBook 15</h3>
                 <p>Laptop VivoBook 15.</p>
                 <p>Precio: Q8,500</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 7" data-precio="8500" data-imagen="img/Laptops/Laptop VivoBook 15.jpg">Añadir al carrito</button>
             </div>
 
             <div class="producto">
@@ -143,7 +127,7 @@
                 <h3>Alienware m15 R6</h3>
                 <p>Laptop de juego Alienware m15 R6.</p>
                 <p>Precio: Q22,000</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Producto 8" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Legion 5 Pro.jpg">Añadir al carrito</button>
             </div>
         </section>
     </main>
@@ -173,7 +157,7 @@
                     </div>
 
                     <div class="modal-carrito__btns">
-                        <a href="carritocompras.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
+                        <a href="/app/views/pages/checkout.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
                         <a href="#" class="btn-carrito btn-carrito-primary">Comprar Ahora</a>
                     </div>
                 </div>
