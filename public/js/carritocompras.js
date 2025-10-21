@@ -1,5 +1,4 @@
-
-        // Variables globales
+// Variables globales
         let carrito = [];
         const modalCarrito = document.getElementById('modalCarrito');
         const btnAbrirCarrito = document.getElementById('btnAbrirCarrito');

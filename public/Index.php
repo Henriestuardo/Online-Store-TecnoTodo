@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrusel Automático</title>
+    <title>TecnoTodo - Tu Tienda de Tecnología</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/public/css/auth/home.css"/>
+    <link rel="stylesheet" href="/public/css/auth/home.css" />
+    <link rel="stylesheet" href="/public/css/carrito.css">
 </head>
 <body>
     <header class="border-bottom py-2">
@@ -42,27 +43,22 @@
                     Iniciar sesión
                 </a>
                 <div class="position-relative">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" class="text-decoration-none text-dark" id="btnAbrirCarrito">
                         <i class="bi bi-cart">
-                            Mi carrito
+                            Mi carrito 
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
                                 fill="currentColor"
                                 class="bi bi-cart"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                    d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6h7.22l1.25-6H3.14z"
-                                />
-                                <path
-                                    d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                                />
+                                viewBox="0 0 16 16" >
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6h7.22l1.25-6H3.14z"/>
+                                <path d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
                             </svg>
                         </i>
                     </a>
-                    <span class="cart-badge">0</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
                 </div>
             </div>
         </div>
@@ -70,13 +66,13 @@
         <div class="menu">
             <ul class="menu-list">
                 <li>
-                    <a href="/app/views/pages/products/Computadoras.php" class="category-link active">
+                    <a href="Computadoras.php" class="category-link active">
                         <img src="img/img-inicio/image copy 5.png" alt="Mouse" class="category-icon" />
                         <span style="color: #ffffff;">Computadoras</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Limpieza.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 6.png"
                             alt="Icono de Electrodomésticos"
@@ -88,7 +84,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Memorias.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 7.png"
                             alt="Icono de Electrodomésticos"
@@ -100,7 +96,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Mousepads.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 8.png"
                             alt="Icono de Electrodomésticos"
@@ -112,7 +108,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Audifonos.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 9.png"
                             alt="Icono de Electrodomésticos"
@@ -124,7 +120,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Mouse.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 10.png"
                             alt="Icono de Electrodomésticos"
@@ -136,7 +132,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/app/views/pages/products/Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
+                    <a href="Accesorios.php" class="category-link" aria-label="Ofertas en Electrodomésticos">
                         <img
                             src="img/img-inicio/image copy 11.png"
                             alt="Icono de Electrodomésticos"
@@ -198,19 +194,19 @@
         <h1 id="computadoras">Computadoras</h1>
         <section id="productos">
             <div class="producto">
-                <img src="img/Laptops/Laptop de juego Alienware m15 R6.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p>Descripción breve del Producto 1.</p>
-                <p>Precio: Q.100.00</p>
-                <button>Añadir al carrito</button>
+                <img src="img/Laptops/Laptop de juego Alienware m15 R6.jpg" alt="Laptop Alienware m15 R6">
+                <h3>Laptop Alienware m15 R6</h3>
+                <p>Laptop gaming de alto rendimiento con procesador Intel i7.</p>
+                <p>Precio: Q.8,500.00</p>
+                <button class="btn-agregar-carrito" data-producto="Laptop Alienware m15 R6" data-precio="8500" data-imagen="img/Laptops/Laptop de juego Alienware m15 R6.jpg">Añadir al carrito</button>
             </div> 
 
             <div class="producto">
-                <img src="img/Laptops/Laptop de juego Blade 15 Advanced.jpg" alt="Producto 4">
-                <h3>Producto 2</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
+                <img src="img/Laptops/Laptop de juego Blade 15 Advanced.jpg" alt="Laptop Blade 15 Advanced">
+                <h3>Laptop Blade 15 Advanced</h3>
+                <p>Laptop gaming premium con tarjeta gráfica RTX 3080.</p>
+                <p>Precio: Q.12,000.00</p>
+                <button class="btn-agregar-carrito" data-producto="Laptop Blade 15 Advanced" data-precio="12000" data-imagen="img/Laptops/Laptop de juego Blade 15 Advanced.jpg">Añadir al carrito</button>
             </div>
         </section>
 
@@ -218,165 +214,61 @@
         <h1 id="ratones">Ratones</h1>
         <section id="productos">
             <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 5</h3>
-                <p>Descripción breve del Producto 4.</p>
+                <img src="img/Mouse/mouse-gaming.jpg" alt="Mouse Gaming Pro">
+                <h3>Mouse Gaming Pro</h3>
+                <p>Mouse gaming con RGB y 6 botones programables.</p>
                 <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
+                <button class="btn-agregar-carrito" data-producto="Mouse Gaming Pro" data-precio="250" data-imagen="img/Mouse/mouse-gaming.jpg">Añadir al carrito</button>
             </div>
 
             <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 6</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
+                <img src="img/Mouse/mouse-inalambrico.jpg" alt="Mouse Inalámbrico">
+                <h3>Mouse Inalámbrico</h3>
+                <p>Mouse ergonómico inalámbrico con sensor óptico.</p>
+                <p>Precio: Q.180.00</p>
+                <button class="btn-agregar-carrito" data-producto="Mouse Inalámbrico" data-precio="180" data-imagen="img/Mouse/mouse-inalambrico.jpg">Añadir al carrito</button>
             </div>
         </section>
 
-        <!--========Sección de teclados=========-->
-        <h1 id="teclados">Teclados</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 9</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
+        <!-- Agrega las demás secciones de productos con la misma estructura -->
+    </div>
 
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 10</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
+    <!-- MODAL CARRITO -->
+    <div class="modal-carrito" id="modalCarrito">
+        <div class="modal-carrito__container">
+            <button type="button" class="modal-carrito__close fa-solid fa-xmark" id="btnCerrarCarrito"></button>
 
-        <!--========Sección de limpiadores de pantalla=========-->
-        <h1 id="mouse">Limpiadores de pantalla</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
+            <div class="modal-carrito__info">
+                <div class="modal-carrito__header">
+                    <h2><i class="fa-brands fa-opencart"></i>Carrito de Compras</h2>
+                </div>
 
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
+                <div class="modal-carrito__body" id="carritoItems">
+                    <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+                    <div class="empty-cart-message" id="emptyCartMessage">
+                        Tu carrito está vacío
+                    </div>
+                </div>
 
-        <!--========Sección de cables=========-->
-        <h1 id="cables">Cables</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
+                <div class="modal-carrito__footer">
+                    <div class="modal-carrito__list-price">
+                        <ul>
+                            <li>Subtotal: <strong id="subtotalCarrito">Q.0.00</strong></li>
+                            <li>Envío: <strong>Q.0.00</strong></li>
+                        </ul>
+                        <h4 class="modal-carrito__total-cart" id="totalCarrito">Total: Q.0.00</h4>
+                    </div>
 
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
+                    <div class="modal-carrito__btns">
+                        <a href="carritocompras.php" class="btn-carrito btn-carrito-border">Ir al carrito</a>
+                        <a href="#" class="btn-carrito btn-carrito-primary">Comprar Ahora</a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!--========Sección de mousepads=========-->
-        <h1 id="mousepads">Mouse Pads</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
-
-        <!--========Sección de usb=========-->
-        <h1 id="usb">USB'S</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
-        
-        <!--========Sección de audifonos=========-->
-        <h1 id="audifonos">Audifonos</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
-
-        <!--========Sección de accesorios=========-->
-        <h1 id="accesorios">Accesorios</h1>
-        <section id="productos">
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 13</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="" alt="Producto 4">
-                <h3>Producto 14</h3>
-                <p>Descripción breve del Producto 4.</p>
-                <p>Precio: Q.250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
+        </div>
     </div>
 
     <footer>
-        
         <div class="footer-wrap">
             <strong>Tienda en Línea</strong>
             <small>
@@ -388,11 +280,10 @@
         </div>
 
         <a href="Contactanos.php"><p>Contactános</p></a>
-
     </footer>
 
     <script src="/public/js/carritocompras.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    
 </body>
 </html>
