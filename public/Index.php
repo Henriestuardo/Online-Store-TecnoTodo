@@ -33,7 +33,7 @@
 
             <!-- Sesión y Carrito -->
             <div class="d-flex align-items-center">
-                <a href="#" class="me-3 text-decoration-none text-dark">
+                <a href="/app/views/auth/login.html" class="me-3 text-decoration-none text-dark">
                     <i class="bi bi-person">
                         <img
                             class="center-block"

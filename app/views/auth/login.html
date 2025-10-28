@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INICIO DE SESIÓN</title>
     <link rel="stylesheet" href="/public/css/Inicio_de_sesión.css">
+    <link rel="icon" href="/public/img/brand/logo2.png">
 </head>
 <body>
     <div id="login-container">
@@ -17,7 +18,7 @@
             <input type="password" id="password" name="password" required placeholder="Contraseña"><br><br>
 
             <input id="IniciarSesion" type="submit" value="Iniciar Sesión">
-            <input id="Registrarse" type="submit" value="Registrate aquí" onclick="window.location.href='registro.html'; return false;">
+            <input id="Registrarse" type="submit" value="Registrate aquí" onclick="window.location.href='/app/views/auth/registro.html'; return false;">
 
             <button id="ver_contra" type="button" class="toggle-password" onclick="togglePassword('password')">👀</button>
             
