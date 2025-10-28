@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INICIO DE SESIÓN</title>
-    <link rel="stylesheet" href="Inicio_de_sesión.css">
+    <link rel="stylesheet" href="/public/css/Inicio_de_sesión.css">
 </head>
 <body>
     <div id="login-container">
-            <img src="Imagenes/logo.png" alt="Logo de la empresa" class="logo">
+            <img src="/public/img/brand/Tecno2 - copia.png" alt="Logo de la empresa" class="logo">
     <H1>INICIO DE SESIÓN</H1>
-        <form action="procesar_login.js" method="post">
+        <form action="app/views/auth/process_login.php" method="post">
 
             <input type="text" id="username" name="username" required placeholder="Usuario"><br><br>
 
@@ -25,6 +25,16 @@
         </form>
     </div>
 
-    <script src="procesar_login.js"></script>
+    <script src="/app/views/auth/process_login.php"></script>
+    <script>
+        function togglePassword(id) {
+            const input = document.getElementById(id);
+            if (input.type === 'password') {
+                input.type = 'text';
+            } else {
+            input.type = 'password';
+            }
+        }
+    </script>
 </body>
 </html>

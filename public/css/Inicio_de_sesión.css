@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('Imagenes/fondo_inicio_sesion.png');
+    background-image: url('/public/img/backgrounds/fondo_inicio_sesion.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
